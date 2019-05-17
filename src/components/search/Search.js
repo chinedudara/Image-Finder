@@ -34,8 +34,13 @@ export default class Search extends Component {
   render() {
     //   console.log(this.state.images)
     return (
-    <React.Fragment>
-      <div>
+      <div 
+        style={
+            {
+                padding: '20px'
+            }
+        }
+      >
         <FormControl fullWidth>
             <TextField 
                 name="searchText"
@@ -47,7 +52,7 @@ export default class Search extends Component {
             />
         </FormControl>
         <br/>
-        <FormControl style={{width: '40%'}}>
+        <FormControl style={{width: '200px'}}>
             <InputLabel>Result Count</InputLabel>
             <br/>
             <Select
@@ -61,9 +66,8 @@ export default class Search extends Component {
                 <MenuItem value={50}>50</MenuItem>
             </Select>
         </FormControl>
-      </div>
       <ImageResults images={this.state.images} />
-    </React.Fragment>
+      </div>
     )
   }
 }
