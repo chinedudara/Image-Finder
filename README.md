@@ -8,8 +8,9 @@
 1. Enter any keyword into the search bar (Search is triggered onChange)
 1. You can limit result count using the dropdown. 
 1. Click the :mag: on a result to display the image in a modal.
-<br />
+
 ___
+
 **Key Technologies implemented:**
 
 * React
